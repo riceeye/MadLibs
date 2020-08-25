@@ -12,7 +12,7 @@ public class MadLibs {
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		FileReader fr=new FileReader("verbs.txt");
 		BufferedReader br=new BufferedReader(fr);
-		Arraylist<Stirng> listString;
+		Arraylist<String>= new Arraylist<String> listString;
 		while((i=br.read())!=-1){
 			String next=new String("");
 			while(!(char)i.equals(" ")){
