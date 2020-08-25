@@ -6,13 +6,14 @@ public class MadLibs {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		
 		ArrayList<String> adj = new ArrayList<String>();
+		Arraylist<String> listString = new ArrayList<String>();
 		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		FileReader fr=new FileReader("verbs.txt");
 		BufferedReader br=new BufferedReader(fr);
-		Arraylist<Stirng> listString;
+		
 		while((i=br.read())!=-1){
 			String next=new String("");
 			while(!(char)i.equals(" ")){
@@ -21,6 +22,7 @@ public class MadLibs {
 			listString.add(next);
 		}
 		br.close();
+		
 		//3. Read an adjectives.txt file and store its list of adjectives into an arraylist.
 		
 		BufferedReader br = new BufferedReader(new FileReader('adjectives.txt'));
