@@ -5,14 +5,14 @@ public class MadLibs {
 
 	public static void main(String[] args) throws IOException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
-		ArrayList<String> nouns = new ArrayList<String>();
+		ArrayList<String> noun = new ArrayList<String>();
 		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
  		BufferedReader reader = new BufferedReader(new FileReader("nouns.txt"));
  		String str = "";
  		while (reader.ready()) {
  			str = reader.readLine();
- 			nouns.add(str);
+ 			noun.add(str);
  		}
  		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
