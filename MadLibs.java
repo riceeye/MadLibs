@@ -5,10 +5,10 @@ public class MadLibs {
 
 	public static void main(String[] args) throws IOException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
+		ArrayList<String> nouns = new ArrayList<String>();
 		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
  		BufferedReader reader = new BufferedReader(new FileReader("nouns.txt"));
- 		ArrayList<String> nouns = new ArrayList<String>();
  		String str = "";
  		while (reader.ready()) {
  			str = reader.readLine();
